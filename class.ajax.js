@@ -21,7 +21,7 @@ var ajax = function() {
   this.errorPrefix = "!";         //  if response begins with this, send response to fail callback instead of success
   this.authErrorPrefix = "@@";    //  if response begins with this, and forceErrorCheck = true, redirect to URL contained in authLogout
   this.forceErrorCheck = true;   //  if true, examine response for error prefixes
-  this.authLogout = "https://www.theowenscompanies.com/omegav3/index.php?logout=1&notice=" + encodeURIComponent("You must be signed in to view this content");  
+  this.authLogout = "YOUR_SIGNOUT_URL_HERE?message=" + encodeURIComponent("You must be signed in to view this content");  
                                   //  [above] url to redirect to if forceErrorCheck = true and response starts with authErrorPrefix
 
   this.defaults = {               //  default properties, can be modified
